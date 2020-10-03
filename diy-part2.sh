@@ -19,6 +19,9 @@ sed -i 's/OpenWrt/William_OpenWrt/g' package/base-files/files/bin/config_generat
 # Modify the version number
 sed -i 's/OpenWrt/William build $(date "+%Y.%m.%d") @ OpenWrt/g' package/lean/default-settings/files/zzz-default-settings
 
+# 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
+sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' ./package/lean/default-settings/files/zzz-default-settings
+
 # Add kernel build user
 [ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
     echo 'CONFIG_KERNEL_BUILD_USER="William"' >>.config ||
