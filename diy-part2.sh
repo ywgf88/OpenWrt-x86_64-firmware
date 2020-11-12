@@ -11,7 +11,7 @@
 #
 
 #Modify the kernel to 5.4:
-sed -i 's/KERNEL_PATCHVER:=4.19/KERNEL_PATCHVER:=5.4/g' target/linux/ipq40xx/Makefile
+#sed -i 's/KERNEL_PATCHVER:=4.19/KERNEL_PATCHVER:=5.4/g' target/linux/ipq40xx/Makefile
 
 # Modify hostname
 sed -i 's/OpenWrt/William_OpenWrt/g' package/base-files/files/bin/config_generate
