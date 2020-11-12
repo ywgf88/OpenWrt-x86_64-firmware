@@ -44,4 +44,4 @@ sed -i 's/192.168.1.1/10.10.10.88/g' package/base-files/files/bin/config_generat
 #sed -i 's/OpenWrt/G-Dock/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #OpenAppFilter
-git clone https://github.com/destan19/OpenAppFilter.git  package/lean/luci-app-oaf
+#git clone https://github.com/destan19/OpenAppFilter.git  package/lean/luci-app-oaf
