@@ -45,3 +45,13 @@ sed -i 's/192.168.1.1/10.10.10.88/g' package/base-files/files/bin/config_generat
 
 #OpenAppFilter
 #git clone https://github.com/destan19/OpenAppFilter.git  package/lean/luci-app-oaf
+
+#add luci-app-diskman
+git clone --depth=1 https://github.com/lisaac/luci-app-diskman
+mkdir parted
+cp luci-app-diskman/Parted.Makefile parted/Makefile
+
+#add luci-app-dockerman
+rm -rf ../lean/luci-app-docker
+git clone --depth=1 https://github.com/KEERMercer/luci-app-dockerman
+git clone --depth=1 https://github.com/lisaac/luci-lib-docker
