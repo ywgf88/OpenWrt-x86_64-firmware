@@ -55,3 +55,6 @@ cp luci-app-diskman/Parted.Makefile parted/Makefile
 rm -rf ../lean/luci-app-docker
 git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
 git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+
+git clone https://github.com/lisaac/luci-in-docker.git package/luci-in-docker
+git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
