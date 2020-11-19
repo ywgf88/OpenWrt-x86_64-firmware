@@ -58,3 +58,7 @@ git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
 git clone https://github.com/lisaac/luci-in-docker.git package/luci-in-docker
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+
+#add dnscrypt-proxy2
+
+git clone --depth 1 https://github.com/peter-tank/luci-app-dnscrypt-proxy2.git ./package/luci-app-dnscrypt-proxy2
