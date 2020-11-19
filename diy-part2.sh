@@ -39,7 +39,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/le
 #git lua-maxminddb 依赖
 #git clone https://github.com/jerrykuku/lua-maxminddb.git  package/lean/lua-maxminddb
 # Modify default IP
-sed -i 's/192.168.1.1/10.10.10.88/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.10.10.89/g' package/base-files/files/bin/config_generate
 # Modify default wireless name
 #sed -i 's/OpenWrt/G-Dock/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
