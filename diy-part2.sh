@@ -67,10 +67,10 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dock
 
 #add dnscrypt-proxy2
 
-git clone --depth 1 https://github.com/peter-tank/luci-app-dnscrypt-proxy2.git package/luci-app-dnscrypt-proxy2
+#git clone --depth 1 https://github.com/peter-tank/luci-app-dnscrypt-proxy2.git package/luci-app-dnscrypt-proxy2
 
 #add tencentcloud ddns
-git clone https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns  package/luci-app-tencentddns
+#git clone https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns  package/luci-app-tencentddns
 
 #add acme.sh
 #git clone https://github.com/openwrt/luci/tree/master/applications/luci-app-acme package/luci-app-acme
