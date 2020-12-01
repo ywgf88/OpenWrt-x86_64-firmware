@@ -39,12 +39,12 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' ./package/lean/default-settings/files/z
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 删除默认argon主题，并下载新argon主题
-rm -rf ./package/lean/luci-theme-argon
-#git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
-#git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
-#git clone https://github.com/jerrykuku/luci-app-argon-config.git package/lean/luci-theme-argon-config
+
 
 
 #git lua-maxminddb 依赖
@@ -63,19 +63,7 @@ sed -i 's/192.168.1.1/10.10.10.89/g' package/base-files/files/bin/config_generat
 #cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 #add luci-app-dockerman
-rm -rf ../lean/luci-app-docker
-#git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
-#git clone --depth=1 https://github.com/lisaac/luci-lib-docker
+rm -rf package/lean/luci-app-docker
+git clone https://github.com/lisaac/luci-in-docker.git package/luci-in-docker
+git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
-#git clone https://github.com/lisaac/luci-in-docker.git package/luci-in-docker
-#git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
-
-#add dnscrypt-proxy2
-
-#git clone --depth 1 https://github.com/peter-tank/luci-app-dnscrypt-proxy2.git package/luci-app-dnscrypt-proxy2
-
-#add tencentcloud ddns
-#git clone https://github.com/Tencent-Cloud-Plugins/tencentcloud-openwrt-plugin-ddns  package/luci-app-tencentddns
-
-#add acme.sh
-#git clone https://github.com/openwrt/luci/tree/master/applications/luci-app-acme package/luci-app-acme
