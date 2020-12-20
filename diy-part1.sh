@@ -20,7 +20,6 @@
 #Clone VSSR source code
 #sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
 
-rm -rf package/lean/luci-theme-argon
 
 #add openwrt-packages
 #sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
