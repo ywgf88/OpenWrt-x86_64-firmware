@@ -39,6 +39,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon-18.06/g' feeds/luci/collections/
 
 
 # 删除默认argon主题，并下载新argon主题
+rm -rf ./package/lean/luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
