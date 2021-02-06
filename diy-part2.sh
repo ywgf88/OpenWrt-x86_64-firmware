@@ -68,6 +68,6 @@ git clone https://github.com/lisaac/luci-in-docker.git package/luci-in-docker
 git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
 #自定义安装源
-git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-git clone https://github.com/kenzok8/litte package/litte
+#git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/kenzok8/litte package/litte
 
