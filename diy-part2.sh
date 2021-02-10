@@ -74,6 +74,8 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dock
 
 #add bypass
 git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
+git clone https://github.com/project-lede/luci-app-godproxy package/luci-app-godproxy
 
 #修改bypass的makefile
 find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
