@@ -71,3 +71,11 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dock
 #git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 #git clone https://github.com/kenzok8/litte package/litte
 
+
+#add bypass
+git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+
+#修改bypass的makefile
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
+
