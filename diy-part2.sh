@@ -44,6 +44,9 @@ rm -rf ./package/lean/luci-theme-argon
 
 #git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
+#删除luci-app-smartdns
+rm -rf ./package/lean/luci-app-smartdns
+
 
 
 
