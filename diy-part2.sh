@@ -46,6 +46,7 @@ rm -rf ./package/lean/luci-theme-argon
 
 #删除luci-app-smartdns
 rm -rf ./package/lean/luci-app-smartdns
+rm -rf ./feeds/kenzo/luci-app-smartdns
 
 
 
