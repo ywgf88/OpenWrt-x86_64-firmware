@@ -68,9 +68,9 @@ sed -i 's/192.168.1.1/10.10.10.89/g' package/base-files/files/bin/config_generat
 #cp luci-app-diskman/Parted.Makefile parted/Makefile
 
 #add luci-app-dockerman
-rm -rf package/lean/luci-app-docker
-git clone https://github.com/lisaac/luci-in-docker.git package/luci-in-docker
-git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+#rm -rf package/lean/luci-app-docker
+#git clone https://github.com/lisaac/luci-in-docker.git package/luci-in-docker
+#git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
 
 #自定义安装源
 #git clone https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
